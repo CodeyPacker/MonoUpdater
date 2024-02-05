@@ -45,4 +45,5 @@ Or, if you've placed the script in a directory that's included in your PATH, you
 
 ```bash
 updateSites.sh --from 12.4.1 --to 12.7.0
+```
 This command tells the script to look for sites within each monorepo that are currently on version 12.4.1 and update them to version 12.7.0.
