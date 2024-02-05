@@ -24,3 +24,22 @@ If you do not have `jq` installed, you can easily install it using Homebrew:
 
 ```bash
 brew install jq
+
+## Make the Script Executable
+Open a terminal and navigate to the directory where you've saved updateSites.sh. Then, run the following command to make it executable:
+
+```bash
+chmod +x updateSites.sh
+
+This command changes the script's permissions to allow it to be run as a program.
+
+## Run the Script with Parameters
+With the script now executable, you can run it directly from the terminal by specifying the --from and --to version parameters as arguments. Here's the syntax based on your request:
+```bash
+./updateSites.sh --from 12.4.1 --to 12.7.0
+
+Or, if you've placed the script in a directory that's included in your PATH, you can run it without the ./ prefix from any location:
+
+```bash
+updateSites.sh --from 12.4.1 --to 12.7.0
+This command tells the script to look for sites within each monorepo that are currently on version 12.4.1 and update them to version 12.7.0.
